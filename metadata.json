@@ -1,0 +1,7 @@
+{
+  "name": "AI Kids News & Image Studio",
+  "description": "Generates funny and educational AI articles about current events for kids, complete with 3D cartoon images. Also features an Image Studio for generating new images and editing existing ones, plus a quick fun fact chat.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

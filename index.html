@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Kids News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media print {
+        body {
+          background-color: #fff;
+          margin: 0;
+        }
+        .no-print {
+          display: none !important;
+        }
+        .printable-area {
+          margin: 0;
+          padding: 1rem;
+          box-shadow: none;
+          page-break-after: always; /* Ensure each paragraph breaks to a new page */
+        }
+        .printable-area:last-child {
+          page-break-after: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem auto;
+        }
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.36.0"
+  }
+}
+</script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-indigo-200 min-h-screen font-sans antialiased text-gray-800">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
